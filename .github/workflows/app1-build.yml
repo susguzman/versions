@@ -1,5 +1,5 @@
 name: APP1 Build
-on: [push]
+on: [pull_request]
 jobs:
   Build-App1:
     runs-on: ubuntu-latest
