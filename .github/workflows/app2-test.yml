@@ -1,6 +1,6 @@
 name: APP2 Test
 on: 
-  pull_request:
+  push:
     paths:
       - 'app2/**'
 jobs:
