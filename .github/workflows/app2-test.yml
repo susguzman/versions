@@ -1,0 +1,16 @@
+name: APP2 Test
+on: 
+  pull_request:
+    paths:
+      - 'app2/**'
+jobs:
+  APP2-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Build container image
+        run: |
+          cd app2
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .

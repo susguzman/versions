@@ -1,18 +1,16 @@
-name: APP2 Docker Image
+name: APP2 Push Image
 on: 
-  pull_request:
+  push:
+    branches:
+      - master
     paths:
       - 'app2/**'
 jobs:
-  APP2-Build:
+  APP2-Push:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
       
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
