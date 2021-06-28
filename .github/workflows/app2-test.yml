@@ -1,8 +1,9 @@
 name: APP2 Test
 on: 
-  pull_request:
+  push:
     paths:
       - 'app2/**'
+      - '.github/workflows/app2-test.yml'
 jobs:
   APP2-Test:
     runs-on: ubuntu-latest
@@ -14,3 +15,9 @@ jobs:
         run: |
           cd app2
           docker build -t app2 .
+
+      - name: Conventional Changelog Action
+        uses: TriPSs/conventional-changelog-action@v3
+        with:
+          github-token: ${{ secrets.github_token }}
+          tag-prefix: 'app2-'
