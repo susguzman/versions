@@ -14,3 +14,8 @@ jobs:
         run: |
           cd app2
           docker build -t app2 .
+
+      - name: Conventional Changelog Action
+        uses: TriPSs/conventional-changelog-action@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN_ACTION }}
