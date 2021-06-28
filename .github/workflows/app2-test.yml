@@ -21,3 +21,4 @@ jobs:
         with:
           github-token: ${{ secrets.github_token }}
           tag-prefix: 'app2-'
+          skip-on-empty: 'false'
