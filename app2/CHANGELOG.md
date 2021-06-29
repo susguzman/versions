@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/susguzman/versions/compare/app2-0.2.1...app2-0.2.2) (2021-06-29)
+
+
+### Bug Fixes
+
+* change changelog file location ([f11e4c2](https://github.com/susguzman/versions/commit/f11e4c2c4ed88833532340de2dd49b778e1de661))
+
+
+
 ## [0.2.1](https://github.com/susguzman/versions/compare/app2-0.2.0...app2-0.2.1) (2021-06-29)
 
 
@@ -21,10 +30,6 @@
 
 
 ## [0.1.1](https://github.com/susguzman/versions/compare/app2-0.1.0...app2-0.1.1) (2021-06-28)
-
-
-
-# 0.1.0 (2021-06-28)
 
 
 
