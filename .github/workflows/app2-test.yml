@@ -22,5 +22,6 @@ jobs:
           github-token: ${{ secrets.github_token }}
           output-file: 'app2/CHANGELOG.md'
           skip-version-file: 'true' # ./package.json
+          version-path: 'app2/'
           tag-prefix: 'app2-'
           skip-on-empty: 'false'
