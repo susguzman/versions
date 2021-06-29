@@ -20,5 +20,6 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
+          output-file: 'app2/CHANGELOG.md'
           tag-prefix: 'app2-'
           skip-on-empty: 'false'
