@@ -1,3 +1,12 @@
+## [0.3.2](https://github.com/susguzman/versions/compare/app2-0.3.1...app2-0.3.2) (2021-07-06)
+
+
+### Bug Fixes
+
+* public ecr login ([0d59ff8](https://github.com/susguzman/versions/commit/0d59ff8938a6f60583e43a39121cac404fe280d9))
+
+
+
 ## [0.3.1](https://github.com/susguzman/versions/compare/app2-0.3.0...app2-0.3.1) (2021-07-06)
 
 
