@@ -22,11 +22,6 @@ jobs:
           skip-version-file: 'true' # ./package.json
           release-count: 0
 
-      - name: Git Version
-        run: |
-          VERSION=$(git tag --sort=-v:refname --list "app2-[0-9]*" | head -n 1 | cut -c 6-)
-          echo "Hola Mundo $VERSION"
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -40,11 +35,7 @@ jobs:
           ECR_REPOSITORY: app2
         run: |
           cd app2
+          VERSION=$(git tag --sort=-v:refname --list "app2-[0-9]*" | head -n 1 | cut -c 6-)
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$VERSION .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$VERSION
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$latest
-
-      - name: Git Version
-        run: |
-          VERSION=$(git tag --sort=-v:refname --list "app2-[0-9]*" | head -n 1 | cut -c 6-)
-          echo "Hola Mundo $VERSION"
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
