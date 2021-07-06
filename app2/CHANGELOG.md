@@ -1,3 +1,7 @@
+## [0.3.12](https://github.com/susguzman/versions/compare/app2-0.3.11...app2-0.3.12) (2021-07-06)
+
+
+
 ## [0.3.11](https://github.com/susguzman/versions/compare/app2-0.3.10...app2-0.3.11) (2021-07-06)
 
 
