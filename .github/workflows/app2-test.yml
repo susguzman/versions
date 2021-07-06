@@ -19,6 +19,7 @@ jobs:
           version-path: 'app2/version'
           tag-prefix: 'app2-'
           skip-on-empty: 'false'
+          skip-version-file: 'true' # ./package.json
 
       - name: Git Version
         run: |
