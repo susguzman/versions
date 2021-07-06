@@ -1,3 +1,12 @@
+## [0.3.14](https://github.com/susguzman/versions/compare/app2-0.3.13...app2-0.3.14) (2021-07-06)
+
+
+### Bug Fixes
+
+* upload image ([0b44033](https://github.com/susguzman/versions/commit/0b44033d32d801056ad8e57adb440ac634345b8e))
+
+
+
 ## [0.3.13](https://github.com/susguzman/versions/compare/app2-0.3.12...app2-0.3.13) (2021-07-06)
 
 
