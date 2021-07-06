@@ -1,3 +1,12 @@
+## [0.3.3](https://github.com/susguzman/versions/compare/app2-0.3.2...app2-0.3.3) (2021-07-06)
+
+
+### Bug Fixes
+
+* ecr repo name ([8f3c4b5](https://github.com/susguzman/versions/commit/8f3c4b5c9bc1f8ceb32d019bf3e1be0d58c283d6))
+
+
+
 ## [0.3.2](https://github.com/susguzman/versions/compare/app2-0.3.1...app2-0.3.2) (2021-07-06)
 
 
