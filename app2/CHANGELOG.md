@@ -1,3 +1,12 @@
+## [0.3.4](https://github.com/susguzman/versions/compare/app2-0.3.3...app2-0.3.4) (2021-07-06)
+
+
+### Bug Fixes
+
+* get version ([b9e42dc](https://github.com/susguzman/versions/commit/b9e42dc252fa2c2fda1b4077ae762f623ee4b49c))
+
+
+
 ## [0.3.3](https://github.com/susguzman/versions/compare/app2-0.3.2...app2-0.3.3) (2021-07-06)
 
 
