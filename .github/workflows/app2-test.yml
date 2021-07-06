@@ -11,11 +11,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      - name: Build container image
-        run: |
-          cd app2
-          docker build -t app2 .
-
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
         with:
@@ -24,3 +19,8 @@ jobs:
           version-path: 'app2/version'
           tag-prefix: 'app2-'
           skip-on-empty: 'false'
+
+      - name: Git Version
+        run: |
+          VERSION=$(git tag --sort=-v:refname --list "app2-[0-9]*" | head -n 1 | cut -c 6-)
+          echo "Hola Mundo $VERSION"
