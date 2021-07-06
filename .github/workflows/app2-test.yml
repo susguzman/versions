@@ -20,6 +20,18 @@ jobs:
           tag-prefix: 'app2-'
           skip-on-empty: 'false'
           skip-version-file: 'true' # ./package.json
+          release-count: 0
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - name: ECR Login
+        run: |
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/l0y7w6p3
 
       - name: Git Version
         run: |
