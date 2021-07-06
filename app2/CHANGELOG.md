@@ -1,3 +1,12 @@
+## [0.3.15](https://github.com/susguzman/versions/compare/app2-0.3.14...app2-0.3.15) (2021-07-06)
+
+
+### Bug Fixes
+
+* context ([7096d75](https://github.com/susguzman/versions/commit/7096d75950ed857a0284f8fcd7b14812873fdf09))
+
+
+
 ## [0.3.14](https://github.com/susguzman/versions/compare/app2-0.3.13...app2-0.3.14) (2021-07-06)
 
 
